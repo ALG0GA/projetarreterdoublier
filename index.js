@@ -13,7 +13,7 @@ const roleId = "898944919018803200";
 client.once('ready', () => {
 
     var job = new CronJob('0 23 * * 1', function() {
-        let calendarChannel = client.channels.cache.get("901416311421284372");
+        let calendarChannel = client.channels.cache.get("904816762271461426");
         let date = new Date;
     
         calendarChannel.bulkDelete(3)
