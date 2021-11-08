@@ -8,7 +8,7 @@ const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS],
                             partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
 });
-const roleId = "898944919018803200";
+const roleId = "773271217540825120";
 
 client.once('ready', () => {
 
