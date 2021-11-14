@@ -20,9 +20,9 @@ client.once('ready', () => {
         .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
         .catch(console.error);
     
-        calendarChannel.send("<@&"+roleId+"> Raid de **mercredi** "+getNextDayOfWeek(date,3)+":");     
-        calendarChannel.send("<@&"+roleId+"> Raid de **dimanche** "+getNextDayOfWeek(date,7)+":");
-        calendarChannel.send("<@&"+roleId+"> Raid de **lundi** "+getNextDayOfWeek(date,8)+":");      }, null, true, 'Europe/Paris');
+        calendarChannel.send("<@&"+roleId+"> Raid de **mercredi** :");     
+        calendarChannel.send("<@&"+roleId+"> Raid de **dimanche** :");
+        calendarChannel.send("<@&"+roleId+"> Raid de **lundi** :");      }, null, true, 'Europe/Paris');
       job.start();
         
     
