@@ -20,10 +20,20 @@ client.once('ready', () => {
         .then(messages => console.log(`Bulk deleted ${messages.size} messages`))
         .catch(console.error);
     
-        calendarChannel.send("<@&"+roleId+"> Raid de **mercredi** :");     
-        calendarChannel.send("<@&"+roleId+"> Raid de **dimanche** :");
-        calendarChannel.send("<@&"+roleId+"> Raid de **lundi** :");      }, null, true, 'Europe/Paris');
-      job.start();
+        calendarChannel.send("<@&"+roleId+"> Raid de **mercredi** :").then(function(message) {
+            message.react("✅")
+            message.react("❎")
+        });    
+        calendarChannel.send("<@&"+roleId+"> Raid de **dimanche** :").then(function(message) {
+            message.react("✅")
+            message.react("❎")
+        });  
+        calendarChannel.send("<@&"+roleId+"> Raid de **lundi** :").then(function(message) {
+            message.react("✅")
+            message.react("❎")
+        });       
+    	}, null, true, 'Europe/Paris');
+      	job.start();
         
     
 
